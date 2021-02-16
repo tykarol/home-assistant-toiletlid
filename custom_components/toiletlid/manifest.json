@@ -1,8 +1,9 @@
 {
     "domain": "toiletlid",
-    "name": "Toiletlid Base",
-    "documentation": "https://github.com/scp10011/xiaomi_toiletlid",
+    "name": "Home Assistant Toiletlid Integration",
+    "documentation": "https://github.com/tykarol/home-assistant-toiletlid",
+    "requirements": [],
     "dependencies": [],
-    "codeowners": ["@scp10011"],
-    "requirements": []
+    "codeowners": ["@scp10011", "@tykarol"],
+    "config_flow": false
 }

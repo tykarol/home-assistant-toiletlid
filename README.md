@@ -1,23 +1,12 @@
-###  hass tinymu toiletlid
-copy toiletlid or xiaomi_toiletlid to $hass/.homeassistant/custom_components
+# Home Assistant Integration for Toiletlid
 
+You need additional platform eg.
+- [Xiaomi Mijia Whale Smart Toilet Cover (xjx.toilet.pro)](https://github.com/tykarol/home-assistant-xjx-toilet-pro)
 
-Hassos:
-```
-cat << EOF >> /config/configuration.yaml 
+## Install:
+- Install it with [HACS](https://hacs.xyz/)
+- Add the configuration to `configuration.yaml`, example:
 
+```yaml
 toiletlid:
-  - platform: xiaomi_toiletlid
-    name: iot-toiletlid
-    host: <ip>
-    token: xxxxxxxxxxxxxxxxxxxxxxx
-EOF
-
-wget https://github.com/scp10011/xiaomi_toiletlid/releases/download/v0.1-0.114/xiaomi_toiletlid.tar -O - | tar x -C /config/custom_components/
-chown root:root /config/custom_components/{toiletlid,xiaomi_toiletlid}
-
-ha core restart
-
 ```
-
-
