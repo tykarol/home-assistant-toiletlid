@@ -9,7 +9,7 @@ from homeassistant.helpers.entity_component import EntityComponent
 _LOGGER = logging.getLogger(__name__)
 DOMAIN = "toiletlid"
 
-SCAN_INTERVAL = timedelta(seconds=10)
+SCAN_INTERVAL = timedelta(seconds=60)
 
 ENTITY_ID_FORMAT = DOMAIN + ".{}"
 
